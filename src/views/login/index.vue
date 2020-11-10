@@ -38,6 +38,8 @@
 </template>
 
 <script>
+// import { fLoginService } from '@/services/userService.js'
+import userService from "@/services/userService"
 export default {
   data() {
     return {
@@ -52,6 +54,13 @@ export default {
   },
   methods: {
     submitBtn() {
+      userService.fLoginService({
+        type:101,
+        account:'huangfushengkun@163.com',
+        secret:'124512'
+      }).then(res => {
+        console.log(res);
+      })
       this.$store.commit('user/changeToken', this.loginForm.userName);
       // this.$router.push({name:"Home",params:{user}})
       this.$router.push({name:"Home"})

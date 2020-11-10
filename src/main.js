@@ -4,7 +4,7 @@
  * @Autor: huangfu
  * @Date: 2020-09-24 09:28:20
  * @LastEditors: huangfu
- * @LastEditTime: 2020-10-30 13:25:56
+ * @LastEditTime: 2020-11-10 10:02:14
  */
 import Vue from 'vue'
 import App from './App.vue'
@@ -59,7 +59,7 @@ let apps = [
   // },
   {
     name: 'vueApp', 
-    entry: '//192.168.1.11:20000', 
+    entry: '//192.168.1.15:20000', 
     container:'#subView', 
     // render:renderUtil.render, 
     activeRule: genActiveRule('/vue'),
